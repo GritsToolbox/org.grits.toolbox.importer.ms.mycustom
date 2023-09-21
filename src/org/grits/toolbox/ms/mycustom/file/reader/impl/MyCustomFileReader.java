@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 import org.apache.log4j.Logger;
@@ -305,6 +306,18 @@ public class MyCustomFileReader extends NotifyingProcess implements IMSAnnotatio
 		scans.add(ms1Scan);
 		scans.add(ms2Scan);
 		return scans;
+	}
+
+	@Override
+	public List<Scan> readMSFile(MSFile file, int scanNumber, Map<Integer, List<Integer>> subScanMap) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Map<Integer, List<Integer>> readMSFileForSubscans(MSFile file) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
